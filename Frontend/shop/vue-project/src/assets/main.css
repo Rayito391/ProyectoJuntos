@@ -2,7 +2,6 @@
 
 #app {
   max-width: 1920px;
-  margin: 0 auto;
   font-weight: normal;
 }
 
@@ -25,9 +24,4 @@ a,
     display: flex;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }

@@ -1,35 +1,23 @@
 <template>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <router-link class="navbar-brand" to=""><img src="../assets/rayoLogo.png" class="img" alt="" srcset=""></router-link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse acomodo" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <router-link class="nav-link navDesign" to="">Home</router-link>
-                    </li>
-                    <li class="nav-item">
-                    <router-link class="nav-link navDesign" to="">Features</router-link>
-                    </li>
-                    <li class="nav-item">
-                    <router-link class="nav-link navDesign" to="">Pricing</router-link>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle navDesign" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><router-link class="dropdown-item navDesign" to="">Action</router-link></li>
-                        <li><router-link class="dropdown-item navDesign" to="">Another action</router-link></li>
-                        <li><router-link class="dropdown-item navDesign" to="">Something else here</router-link></li>
-                    </ul>
-                    </li>
-                </ul>
+        <nav class="navbar bg-transparent" style="border: 1px solid red;">
+            <router-link to=""><img src="../assets/images/NetflixLogo.png" class="img"></router-link>
+            <ul class="nav justify-content-center mb-4">
+                <div class="acomodo d-flex gap-2 d-md-flex justify-content-md-start">
+                    <div class="dropdown">
+                        <button class="btn nav-item bg-transparent border rounded-2 btn-sm me-md-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Icon icon="mdi:language"  style="color: white" />Español
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><router-link class="dropdown-item " href="#">Español</router-link> </li>
+                            <li><router-link class="dropdown-item" href="#">Inglés</router-link></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="nav-item border rounded-2 btn-sesion btn-sm" data-bs-toggle="button">
+                        <router-link to="">Iniciar Sesion</router-link>
+                    </button>
                 </div>
-            </div>
+            </ul>
         </nav>
     </header>
     
@@ -43,25 +31,39 @@
 </script>
   
 <style scoped>
-    header nav{
-        margin-left: -26px;
-        width: 1910px;
+    nav{
+        width: 1920px;
+        margin-left: 0px
     }
-    .img{
-        width: 50px;
+    nav ul li{
+        display: inline-block;
+    }
+    nav .acomodo{
+        margin-left: -300%;
+    }
+    nav button{
+        width: 120px;
+        padding: 5px;
+        font-weight: bold;
+    }
+    .btn-sesion{
+        font-size: small;
+        background-color: rgba(229, 9, 20, 1);
+        color: white;
+        transition: .2s ease-in-out;
+    }
+    .btn-sesion:hover{
+        background-color: rgb(197, 16, 25);
+        color: white;
+        text-decoration: underline
+    }
+    nav .img{
+        width: 190px;
         height: auto;
-        margin-left: 10px;
+        margin-left: 180%;
+        margin-top: -20px;
     }
-    .acomodo{
-        margin-left: 75%;
-    }
-    .navDesign{
-        cursor: pointer;
-    }
-    .navDesign:hover{
-        background: rgba(0, 189, 126,0.2);
-        text-decoration: underline;
-        transition: 0.4s;
-    }
+
+
 </style>
   
