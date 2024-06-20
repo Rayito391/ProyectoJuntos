@@ -26,7 +26,7 @@
                     <div class="col-md-6 d-flex justify-content-center align-items-center left">
                         <img src="../assets/images/popCorn.png" style="width: 100px;">
                     </div>
-                    <div class="col-md-6 d-flex justify-content-center align-items-center rigth">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right">
                         <div class="text-left"> <!-- Agregado text-left para alinear el texto a la izquierda -->
                             <p class="h5 mb-3">Todo lo que te encanta de Netflix por tan solo $99.</p>
                             <p class="h6 mb-3">Elige el plan Estándar con anuncios.</p>
@@ -42,80 +42,162 @@
             </div>
         </article>
         <article>
-            <div class="container border">
-                <p class="h2 title fontDesign">Disfruta en tu TV</p>
+            <div class="container divPositionLeft">
+                <div class="align-middle">
+                    <p class="h2 title fontDesign">Disfruta en tu TV</p>
+                    <p class="h4">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple <br>TV, reproductores de Blu-ray y más.
+                    </p>
+                    <img class="float-end imgPositionRight" src="../assets/images/home1.png" alt="">
+                </div>
             </div>
-            <div class="container">
-
+            <hr class="border line">
+        </article>
+        <article>
+            <div class="container divPositionRight">
+                <div class="align-middle">
+                    <img class="float-start imgPositionLeft" src="../assets/images/home1.png" alt="">
+                    <p class="h2 title fontDesign">Disfruta donde quieras</p>
+                    <p class="h4">Películas y series ilimitadas en tu teléfono, tablet,<br> laptop y TV.
+                    </p>
+                </div>
             </div>
+            <hr class="border line">
+        </article>
+        <article>
+            <div class="container divPositionLeft">
+                <div class="align-middle">
+                    <p class="h2 title fontDesign">Crea perfiles para niños</p>
+                    <p class="h4">Los niños vivirán aventuras con sus personajes <br> favoritos en un espacio diseñado exclusivamente para <br> ellos, sin costo con tu membresía.
+                    </p>
+                    <img class="float-end imgPositionRight" src="../assets/images/home1.png" alt="">
+                </div>
+            </div>
+            <hr class="border line">
+        </article>
+        <article>
+            <div class="container divPositionRight">
+                <div class="align-middle">
+                    <img class="float-start imgPositionLeft" src="../assets/images/home1.png" alt="">
+                    <p class="h2 title fontDesign">Descarga tus series para <br> verlas offline</p>
+                    <p class="h4">Ve Netflix en un avión, un tren o un submarino...
+                    </p>
+                </div>
+            </div>
+            <hr class="border line">
+        </article>
+        <article>
+            <br>
+            <div class="container text-center">
+                <p class="h2 title fontDesign">
+                    Preguntas frecuentes
+                </p>
+            </div>
+            
         </article>
     </main>
 </template>
+
 <script>
-    export default {
-        name: 'TheWelcome'
-    }
+export default {
+    name: 'TheWelcome'
+}
 </script>
+
 <style scoped>
-    .acomodo{
-        color: white;
-        margin-top: 10%;
-        opacity: 1;
-    }
-    .acomodo2{
-        margin-left:22.5%;
-    }
-    .title{
-        font-size: 2.7em;
-    }
-    .subtitle{
-        font-weight: 400
-    }
-    .rigth{
-        margin-top: 15px;
-        margin-left: -20%;
-    }
-    .left{
-        margin-top: 15px;
-        margin-left: 10%;
-        margin-right: -220px;
-    }
-    .inputEmail{
-        border: 1px solid white;
-        background: rgba(33, 33, 33, 0.6);
-        padding: 12px;
-        width: 380px;
-        height: 56px;
-    }
-    .inputEmail::placeholder{
-        color: white;
-    }
-    .btnNext{
-        text-align: center;
-        background-color: rgba(229, 9, 20, 1);
-        border: 1px solid rgba(229, 9, 20, 1);
-        color: white;
-        font-size: 1.5em;
-        font-weight: 500;
-        margin-left: -540px;
-        transition: .2s ease-in-out;
-        padding: 10px;
-        width: 200px;
-    }
-    .btnNext:hover{
-        background-color: rgb(197, 16, 25);
-        color: white;
-    }
-    .containerPlain{
-        color: white;
-        width: 90%;
-        height: 150px;
-        margin: auto;
-        margin-top: 80px;
-        background: rgb(72,22,63);
-        background: radial-gradient(circle, rgba(72,22,63,1) 9%, rgba(0,4,19,1) 74%);
-    }
+.acomodo {
+    color: white;
+    margin-top: 10%;
+}
 
+.acomodo2 {
+    margin-left: 22.5%;
+}
+
+.title {
+    font-size: 2.7em;
+}
+
+.subtitle {
+    font-weight: 400;
+}
+
+.right {
+    margin-top: 15px;
+    margin-left: -20%;
+}
+
+.left {
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: -220px;
+}
+
+.inputEmail {
+    border-color: gray;
+    background: rgba(33, 33, 33, 0.6);
+    padding: 12px;
+    width: 380px;
+    height: 56px;
+}
+
+.inputEmail::placeholder {
+    color: white;
+}
+
+.btnNext {
+    text-align: center;
+    background-color: rgba(229, 9, 20, 1);
+    border: 1px solid rgba(229, 9, 20, 1);
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: -540px;
+    transition: .2s ease-in-out;
+    padding: 10px;
+    width: 200px;
+}
+
+.btnNext:hover {
+    background-color: rgb(197, 16, 25);
+    color: white;
+}
+
+.containerPlain {
+    color: white;
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 80px;
+    background: rgb(72,22,63);
+    background: radial-gradient(circle, rgba(72,22,63,1) 9%, rgba(0,4,19,1) 74%);
+}
+
+.imgPositionRight{
+    position: relative;
+    margin-top: -16%;
+    margin-right: 20%;
+    width: 40%;
+}
+.divPositionLeft{
+    margin-top: 180px;
+    margin-left: 23%;
+    color: white;
+    padding-bottom: 220px;
+}
+.imgPositionLeft{
+    position: relative;
+    margin-top: -8%;
+    margin-left: -20%;
+    width: 40%;
+}
+.divPositionRight{
+    margin-top: 180px;
+    margin-left: 33%;
+    color: white;
+    padding-bottom: 170px;
+}
+.line{
+    height: 8px;
+    background: gray;
+}
 </style>
-
-
