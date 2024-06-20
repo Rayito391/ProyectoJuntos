@@ -1,16 +1,16 @@
 <template>
-    <div id="app">
+  <div id="app">
       <div class="background">
-        <div class="overlay"></div>
-      <header>
-        <MenuBarView />
-      </header>
-      <main>
-        <TheWelcome/>
-        <router-view />
-      </main>
-    </div>
-  </div> 
+          <div class="overlay"></div>
+          <header>
+              <MenuBarView />
+          </header>
+          <main>
+              <TheWelcome />
+              <router-view />
+          </main>
+      </div>
+  </div>
 </template>
 
 <script setup>
@@ -21,12 +21,15 @@ import TheWelcome from './views/TheWelcome.vue';
 <style>
 #app {
   background: black;
-  height: 100vh;
+  width: 100%;
+  max-width: 100%; /* Ajusta el máximo ancho según sea necesario */
+  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .background{
-  height: 75vh;
+  height: 680px;
   position: relative;
   margin-top: 0;
   background-image: url('@/assets/images/netflixBackground.png');
@@ -45,8 +48,5 @@ import TheWelcome from './views/TheWelcome.vue';
 header, main {
   position: relative;
   z-index: 2;
-}
-.background{
-  background-color: black;
 }
 </style>
