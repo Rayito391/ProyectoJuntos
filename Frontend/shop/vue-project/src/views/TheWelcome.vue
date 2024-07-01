@@ -55,7 +55,7 @@
         <article>
             <div class="container divPositionRight">
                 <div class="align-middle">
-                    <img class="float-start imgPositionLeft" src="../assets/images/home1.png" alt="">
+                    <img class="float-start imgPositionLeft" src="../assets/images/home2.png" alt="">
                     <p class="h2 title fontDesign">Disfruta donde quieras</p>
                     <p class="h4">Películas y series ilimitadas en tu teléfono, tablet,<br> laptop y TV.
                     </p>
@@ -69,7 +69,7 @@
                     <p class="h2 title fontDesign">Crea perfiles para niños</p>
                     <p class="h4">Los niños vivirán aventuras con sus personajes <br> favoritos en un espacio diseñado exclusivamente para <br> ellos, sin costo con tu membresía.
                     </p>
-                    <img class="float-end imgPositionRight" src="../assets/images/home1.png" alt="">
+                    <img class="float-end imgPositionRight" src="../assets/images/home3.png" alt="">
                 </div>
             </div>
             <hr class="border line">
@@ -77,7 +77,7 @@
         <article>
             <div class="container divPositionRight">
                 <div class="align-middle">
-                    <img class="float-start imgPositionLeft" src="../assets/images/home1.png" alt="">
+                    <img class="float-start imgPositionLeft" src="../assets/images/home4.png" alt="">
                     <p class="h2 title fontDesign">Descarga tus series para <br> verlas offline</p>
                     <p class="h4">Ve Netflix en un avión, un tren o un submarino...
                     </p>
@@ -87,12 +87,22 @@
         </article>
         <article>
             <br>
-            <div class="container text-center">
-                <p class="h2 title fontDesign">
+            <div class="container text-center fq color-white">
+                <p class="h2 title fontDesign mt-5">
                     Preguntas frecuentes
                 </p>
+                <div class="dropdown mt-3">
+                    <button class="btndesign dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="h4">¿Qué es Netflix?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#FFFFFF"><path d="M446.67-446.67H200v-66.66h246.67V-760h66.66v246.67H760v66.66H513.33V-200h-66.66v-246.67Z"/></svg>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       <p class="dropdown-item">Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.
+
+Todo lo que quieras ver, a un costo mensual muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!</p>
+                    </div>
+                </div>
             </div>
-            
         </article>
     </main>
 </template>
@@ -191,13 +201,52 @@ export default {
     width: 40%;
 }
 .divPositionRight{
-    margin-top: 180px;
+    margin-top: 80px;
     margin-left: 33%;
     color: white;
     padding-bottom: 170px;
 }
+.divPositionRight img{
+    top: 0px;
+    height: 500px;
+    width: auto;
+}
+.divPositionLeft img{
+    top: 0px;
+    height: 300px;
+    width: auto;
+}
 .line{
+    width: 100%;
     height: 8px;
     background: gray;
+}
+.fontDesign{
+    color: white;
+}
+.fq{
+    height: 1000px;
+}
+.btndesign{
+    border-style: none;
+    background: rgba(47, 47, 47, 1);
+    color: white;
+    height: 85px;
+    text-align: start;
+    width: 1175px;
+}
+.btndesign span{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.btndesign svg{
+    float: right;
+    margin-right: 10px;
+}
+/* Eliminar la flecha del dropdown */
+.dropdown-toggle::after {
+    display: none;
 }
 </style>
